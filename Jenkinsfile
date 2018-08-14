@@ -6,6 +6,7 @@ pipeline {
       ORG               = 'itakouna'
       APP_NAME          = 'python-flask-docker'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
+      DOCKER_REGISTRY = http://hub.docker.com
     }
     stages {
       stage('CI Build and push snapshot') {
